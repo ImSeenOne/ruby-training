@@ -1,3 +1,4 @@
+
 class Parent
 
     def initialize(name, lastName, someText, age)
@@ -99,8 +100,8 @@ childrenObj = Children.new(name, lastName, "Texto texto", age, books)
 childrenObj.default_method
 
 puts "Loaded default books..."
-puts "Children's name is: #{childrenObj.getName}"
-puts "Availiable books for #{childrenObj.getName} are:\n"
+puts "\nChildren's name is: #{childrenObj.getName}"
+puts "\nAvailiable books for #{childrenObj.getName} are:\n"
 childrenObj.getBooks.each do |key, value|
     print key, " is ", value.toString, "\n"
 end
